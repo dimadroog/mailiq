@@ -6,8 +6,9 @@ $database = new Medoo([
 	'database_type' => 'mysql',
 	'database_name' => 'mail_iq',
 	'server' => 'localhost',
-	'username' => 'root',
-	'password' => ''
+	'charset'=>'utf8',
+	'username' => 'dbuser',
+	'password' => 'Z9a9R8f6'
 ]);
  
 

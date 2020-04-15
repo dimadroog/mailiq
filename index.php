@@ -9,7 +9,6 @@
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="static/css/style.css">
 	</head>
 	<body>
 
@@ -41,11 +40,11 @@
 
 						<div class="form-group">
 							<label for="input_name">Имя <span class="text-danger">*</span></label>
-							<input type="text" name="name" class="form-control" id="input_name" placeholder="Введите ваше имя" value="">
+							<input type="text" name="name" class="form-control" id="input_name" placeholder="Введите ваше имя" value="" required>
 						</div>
 						<div class="form-group">
 							<label for="input_email">Email <span class="text-danger">*</span></label>
-							<input type="email" name="email" class="form-control" id="input_email" placeholder="Введите ваш email" value="">
+							<input type="email" name="email" class="form-control" id="input_email" placeholder="Введите ваш email" value="" required>
 						</div>
 					</div>
 
@@ -61,10 +60,6 @@
 						<p class="card-text">Вы дали правильный ответ на <span class="poll__response__cnt_right_answers"></span> вопросов из <span class="poll__response__cnt_questions"></span></p>
 					</div>
 				</div>
-
-
-
-
 
 
 			</div>
