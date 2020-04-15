@@ -10,7 +10,7 @@ $database = new Medoo([
 	'username' => 'root',
 	'password' => ''
 ]);
- 
+
 
 function getQuestionsList($database){
 	$data = $database->select('questions', [
@@ -19,6 +19,7 @@ function getQuestionsList($database){
 	]);	
 	return $data;
 }
+
 
 function getAnswersList($database, $question_id){
 	$data = $database->select('answers', [
