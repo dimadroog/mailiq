@@ -6,8 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title>Fashion Poll</title>
-
-		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	</head>
 	<body>
@@ -22,7 +20,7 @@
 					
 					<?php foreach (getQuestionsList($database) as $key => $question): ?>
 						<div class="poll__question card mb-2 p-3">
-							<h3>Вопрос<?php echo $key+1; ?>: <?php echo $question['text']; ?></h3>
+							<h3>Вопрос<?php echo $key + 1; ?>: <?php echo $question['text']; ?></h3>
 
 							<?php foreach (getAnswersList($database, $question['id']) as $answer): ?>
 								<div class="poll__question__answer form-check">
@@ -33,7 +31,6 @@
 							
 						</div>
 					<?php endforeach ?>
-
 
 					<div class="poll__user card mb-2 p-3">
 						<h3>Заполните данные о себе</h3>
@@ -60,7 +57,6 @@
 						<p class="card-text">Вы дали правильный ответ на <span class="poll__response__cnt_right_answers"></span> вопросов из <span class="poll__response__cnt_questions"></span></p>
 					</div>
 				</div>
-
 
 			</div>
 
