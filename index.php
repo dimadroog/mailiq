@@ -27,7 +27,7 @@
 
 							<?php foreach (getAnswersList($database, $question['id']) as $answer): ?>
 								<div class="poll__question__answer form-check">
-									<input class="form-check-input" type="radio" id="<?php echo $answer['id']; ?>" name="questions[<?php echo $question['id']; ?>]" value="<?php echo $answer['id']; ?>" required checked>
+									<input class="form-check-input" type="radio" id="<?php echo $answer['id']; ?>" name="questions[<?php echo $question['id']; ?>]" value="<?php echo $answer['id']; ?>" required>
 									<label class="form-check-label" for="<?php echo $answer['id']; ?>"><?php echo $answer['text']; ?></label>	
 								</div>
 							<?php endforeach ?>
@@ -41,11 +41,11 @@
 
 						<div class="form-group">
 							<label for="input_name">Имя <span class="text-danger">*</span></label>
-							<input type="text" name="name" class="form-control" id="input_name" placeholder="Введите ваше имя" value="dmitry">
+							<input type="text" name="name" class="form-control" id="input_name" placeholder="Введите ваше имя" value="">
 						</div>
 						<div class="form-group">
 							<label for="input_email">Email <span class="text-danger">*</span></label>
-							<input type="email" name="email" class="form-control" id="input_email" placeholder="Введите ваш email" value="def_25@bk.ru">
+							<input type="email" name="email" class="form-control" id="input_email" placeholder="Введите ваш email" value="">
 						</div>
 					</div>
 
